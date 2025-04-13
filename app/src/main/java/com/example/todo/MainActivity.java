@@ -1,6 +1,7 @@
 package com.example.todo;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 String getDescription = description.getText().toString();
                 todo = new Todo(getTitle,getDescription);
                 taskList.add(todo);
+                Log.v("Hello","Hello world");
             }
         });
     }
